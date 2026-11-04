@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marka España · Tous nos liens</title>
+<meta name="description" content="Tous les liens de Marka España, boutique de vêtements pour hommes à Oran (rond-point de la Wilaya) : commande WhatsApp, livraison 69 wilayas, téléphone, avis Google, TikTok, Facebook et itinéraire.">
+<meta name="theme-color" content="#0b0b0c">
+<meta property="og:title" content="Marka España · Tous nos liens">
+<meta property="og:description" content="Mode homme à Oran. Commande sur WhatsApp, livraison 69 wilayas, TikTok, Facebook, avis Google et itinéraire.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+  /* Marka España : page « tous nos liens », ouverte par le QR code / NFC de la plaque. */
+  :root {
+    --k950: #070708; --k900: #0b0b0c; --k800: #1a1a1d; --k700: #242428;
+    --white: #f6f4f1; --muted: #a9a5a1; --red: #e4222a; --red-2: #f2353d; --gold: #fcad1d;
+    --line: rgba(228,34,42,.45);
+    --text: "Jost", system-ui, sans-serif;
+    --ease: cubic-bezier(.22,1,.36,1);
+  }
+  [dir="rtl"] { --text: "Cairo", sans-serif; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--k900); color: var(--white); font: 400 17px/1.5 var(--text); -webkit-font-smoothing: antialiased; min-height: 100vh; min-height: 100dvh; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  .bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; background: var(--k950); }
+  .bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); filter: saturate(.9); }
+  .bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 60% at 50% 0%, rgba(228,34,42,.28), transparent 60%), linear-gradient(180deg, rgba(7,7,8,.55), rgba(7,7,8,.86) 40%, rgba(7,7,8,.96)); }
+  @media (prefers-reduced-motion: no-preference) { .bg img { animation: drift 40s ease-in-out infinite alternate; } }
+  @keyframes drift { from { transform: scale(1.08); } to { transform: scale(1.16) translate(-2%, -2%); } }
+
+  .wrap { max-width: 460px; margin-inline: auto; padding: 28px 18px calc(36px + env(safe-area-inset-bottom)); position: relative; }
+  .lang { position: absolute; top: 18px; inset-inline-end: 18px; height: 38px; min-width: 54px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: rgba(7,7,8,.6); font: 600 13px/1 var(--text); letter-spacing: .08em; transition: background .2s, border-color .2s; }
+  .lang:hover { background: var(--red); border-color: var(--red); }
+
+  header { text-align: center; padding-top: 46px; }
+  .logo { width: 236px; height: auto; margin: 0 auto; display: block; filter: drop-shadow(0 10px 28px rgba(0,0,0,.7)); }
+  .sub { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 18px; font: 600 12px/1 var(--text); letter-spacing: .3em; text-transform: uppercase; color: var(--white); }
+  .sub::before, .sub::after { content: ""; width: 26px; height: 2px; background: var(--red); }
+  [dir="rtl"] .sub { letter-spacing: 0; font-size: 15px; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+  .chips > span, .status { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 13px; border-radius: 999px; background: rgba(7,7,8,.6); border: 1px solid rgba(255,255,255,.1); font: 500 13px/1 var(--text); color: var(--muted); }
+  .chips svg { width: 15px; height: 15px; color: var(--red); }
+  .status i { width: 8px; height: 8px; border-radius: 50%; background: #3ddc84; }
+  .status.closed i { background: var(--red); }
+  @media (prefers-reduced-motion: no-preference) { .status:not(.closed) i { animation: pulse 2s infinite; } }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(61,220,132,.55); } 70% { box-shadow: 0 0 0 8px rgba(61,220,132,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,132,0); } }
+
+  .links { list-style: none; display: grid; gap: 12px; margin-top: 28px; }
+  .links a { display: flex; align-items: center; gap: 14px; min-height: 62px; padding: 10px 18px 10px 10px; border-radius: 16px; background: rgba(22,22,25,.9); border: 1px solid rgba(255,255,255,.08); font: 500 17px/1.2 var(--text); transition: transform .15s var(--ease), border-color .2s, background .2s; }
+  [dir="rtl"] .links a { padding: 10px 10px 10px 18px; }
+  .links a:hover { border-color: var(--line); background: rgba(32,32,36,.94); }
+  .links a:active { transform: scale(.98); }
+  .links .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: var(--k700); color: var(--white); }
+  .links .ic svg { width: 20px; height: 20px; }
+  .links .tx { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+  .links .tx small { font-size: 13px; color: var(--muted); }
+  .links .go { flex: none; width: 18px; height: 18px; color: var(--muted); transition: transform .2s var(--ease), color .2s; }
+  [dir="rtl"] .links .go { transform: scaleX(-1); }
+  .links a:hover .go { color: var(--red); transform: translateX(3px); }
+  [dir="rtl"] .links a:hover .go { transform: scaleX(-1) translateX(3px); }
+  .links a.main { background: var(--red); border-color: var(--red); font-weight: 600; box-shadow: 0 12px 30px -12px rgba(228,34,42,.7); }
+  .links a.main .ic { background: rgba(255,255,255,.16); }
+  .links a.main .tx small { color: rgba(255,255,255,.82); }
+  .links a.main .go { color: #fff; }
+  .links a.main:hover { background: var(--red-2); }
+  .links a.google .ic { background: #fff; }
+  .links a.google .ic svg { width: 22px; height: 22px; }
+  .stars { color: var(--gold); letter-spacing: .12em; }
+
+  footer { text-align: center; margin-top: 30px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+  footer a { color: var(--white); border-bottom: 1px solid var(--line); }
+  .credit { margin-top: 22px; display: inline-flex; align-items: center; gap: 8px; color: #85817d; font: 500 10px/1 "Jost", sans-serif; letter-spacing: .22em; text-transform: uppercase; }
+  .credit img { height: 15px; width: auto; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .js header > *, .js .links li, .js footer { animation: rise .7s var(--ease) both; }
+    .js header > :nth-child(3) { animation-delay: .05s; } .js header > :nth-child(4) { animation-delay: .1s; }
+    .js .links li { animation-delay: calc(.18s + var(--i) * 60ms); }
+    .js footer { animation-delay: .6s; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="bg"><img src="img/bg-blur.jpg" alt=""></div>
+
+<div class="wrap">
+  <button class="lang" id="lang" type="button" aria-label="التبديل إلى العربية">عربي</button>
+  <header>
+    <h1 class="sr">Marka España</h1>
+    <img class="logo" src="img/logo-marka.png" alt="Marka España" width="598" height="290">
+    <p class="sub" data-i="sub">Mode homme · Oran</p>
+    <div class="chips">
+      <p class="status" id="status"><i aria-hidden="true"></i><span id="status-t" data-i="hours">10h – 21h · vendredi dès 15h30</span></p>
+      <span><svg viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg><span data-i="ship">Livraison 69 wilayas</span></span>
+    </div>
+  </header>
+
+  <ul class="links">
+    <li style="--i:0"><a class="google" href="https://search.google.com/local/writereview?placeid=ChIJT4Hxzi-Jfg0RUdmRDdq01qE" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg></span>
+      <span class="tx"><span data-i="review">Laisser un avis Google</span><small><span class="stars" aria-hidden="true">★★★★★</span> <span data-i="reviewSub">Votre avis compte</span></small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:1"><a class="main" href="https://wa.me/213781361210" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span>
+      <span class="tx"><span data-i="order">Commander sur WhatsApp</span><small data-i="orderSub">Livraison dans les 69 wilayas</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:2"><a href="tel:+213781361210">
+      <span class="ic"><svg viewBox="0 0 512 512" fill="currentColor"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></span>
+      <span class="tx"><span data-i="call">Appeler</span><small dir="ltr">0781 36 12 10</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:3"><a href="https://www.tiktok.com/@marka.espna" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></span>
+      <span class="tx"><span>TikTok</span><small dir="ltr">@marka.espna</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:4"><a href="https://www.facebook.com/BOUTIQUEMARKAESPANA/" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 320 512" fill="currentColor"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></span>
+      <span class="tx"><span>Facebook</span><small>Marka Espãna · Oran</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:5"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Boutique+Marka+Espa%C3%B1a&amp;destination_place_id=ChIJT4Hxzi-Jfg0RUdmRDdq01qE" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 384 512" fill="currentColor"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span>
+      <span class="tx"><span data-i="map">Itinéraire</span><small data-i="addr">Rue Mirocho, rond-point de la Wilaya</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+  </ul>
+
+  <footer>
+    <p><span data-i="shop">Boutique</span> : <a href="tel:+213549542439" dir="ltr">0549 54 24 39</a> · <a href="mailto:espanamarka@gmail.com">espanamarka@gmail.com</a></p>
+    <p data-i="place">Rond-point de la Wilaya, Oran</p>
+    <div class="credit" dir="ltr"><span>Designed by</span><img src="img/oranova-logo-light.png" alt="Oranova" width="2000" height="426"></div>
+  </footer>
+</div>
+
+<script>
+// Horaires (Facebook et Google) : 10h – 21h, le vendredi à partir de 15h30
+const CLOSE = 21, openAt = day => day === "Fri" ? 15.5 : 10;
+const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const T = {
+  fr: { sub: "Mode homme · Oran", hours: "10h – 21h · vendredi dès 15h30", ship: "Livraison 69 wilayas",
+        order: "Commander sur WhatsApp", orderSub: "Livraison dans les 69 wilayas", call: "Appeler",
+        review: "Laisser un avis Google", reviewSub: "Votre avis compte", map: "Itinéraire", addr: "Rue Mirocho, rond-point de la Wilaya",
+        shop: "Boutique", place: "Rond-point de la Wilaya, Oran",
+        open: "Ouvert · ferme à", closed: "Fermé · ouvre à", langBtn: "عربي", langLabel: "التبديل إلى العربية", title: "Marka España · Tous nos liens" },
+  ar: { sub: "ملابس رجالية · وهران", hours: "10:00 – 21:00 · الجمعة من 15:30", ship: "التوصيل إلى 69 ولاية",
+        order: "اطلب عبر واتساب", orderSub: "التوصيل إلى 69 ولاية", call: "اتصل",
+        review: "قيّمنا على Google", reviewSub: "رأيك يهمنا", map: "الاتجاهات", addr: "شارع ميروشو، دوار الولاية",
+        shop: "المحل", place: "دوار الولاية، وهران",
+        open: "مفتوح · يغلق على", closed: "مغلق · يفتح على", langBtn: "FR", langLabel: "Passer en français", title: "Marka España · كل روابطنا" }
+};
+let lang = "fr";
+try { if (localStorage.getItem("marka-lang") === "ar") lang = "ar"; } catch (e) {}
+
+const hm = h => `${Math.floor(h)}${lang === "ar" ? ":" : "h"}${String(Math.round(h % 1 * 60)).padStart(2, "0")}`;
+function status() {
+  const t = T[lang], el = document.getElementById("status"), txt = document.getElementById("status-t");
+  try {
+    const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Africa/Algiers", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date());
+    const get = k => parts.find(p => p.type === k).value;
+    const day = get("weekday"), h = +get("hour") % 24 + +get("minute") / 60, open = openAt(day), isOpen = h >= open && h < CLOSE;
+    const next = h < open ? open : openAt(DAYS[(DAYS.indexOf(day) + 1) % 7]);
+    el.classList.toggle("closed", !isOpen);
+    txt.textContent = `${isOpen ? t.open : t.closed} ${hm(isOpen ? CLOSE : next)}`;
+  } catch (e) { txt.textContent = t.hours; }
+}
+
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang; document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  document.title = t.title;
+  document.querySelectorAll("[data-i]").forEach(el => { const v = t[el.dataset.i]; if (typeof v === "string") el.textContent = v; });
+  const b = document.getElementById("lang"); b.textContent = t.langBtn; b.setAttribute("aria-label", t.langLabel);
+  status();
+}
+document.getElementById("lang").addEventListener("click", () => {
+  lang = lang === "fr" ? "ar" : "fr";
+  try { localStorage.setItem("marka-lang", lang); } catch (e) {}
+  render();
+});
+render();
+</script>
+</body>
+</html>
