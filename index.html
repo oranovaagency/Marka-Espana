@@ -80,8 +80,10 @@
 
   footer { text-align: center; margin-top: 30px; color: var(--muted); font-size: 13px; line-height: 1.8; }
   footer a { color: var(--white); border-bottom: 1px solid var(--line); }
-  .credit { margin-top: 22px; display: inline-flex; align-items: center; gap: 8px; color: #85817d; font: 500 10px/1 "Jost", sans-serif; letter-spacing: .22em; text-transform: uppercase; }
-  .credit img { height: 15px; width: auto; }
+  .credit { display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; direction: ltr; opacity: .8; }
+  .credit span { font: 600 10px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .credit img { height: 14px; width: auto; }
+
 
   @media (prefers-reduced-motion: no-preference) {
     .js header > *, .js .links li, .js footer { animation: rise .7s var(--ease) both; }
@@ -137,7 +139,7 @@
   <footer>
     <p><span data-i="shop">Boutique</span> : <a href="tel:+213549542439" dir="ltr">0549 54 24 39</a> · <a href="mailto:espanamarka@gmail.com">espanamarka@gmail.com</a></p>
     <p data-i="place">Rond-point de la Wilaya, Oran</p>
-    <div class="credit" dir="ltr"><span>Designed by</span><img src="img/oranova-logo-light.png" alt="Oranova" width="2000" height="426"></div>
+    <a class="credit" href="https://www.instagram.com/oranova.agency/" target="_blank" rel="noopener" aria-label="Designed by Oranova"><span>Designed by</span><img src="img/oranova-logo-light.png" alt="Oranova"></a>
   </footer>
 </div>
 
